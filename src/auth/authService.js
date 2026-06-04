@@ -5,12 +5,12 @@ const User = require('../models/User');
 async function login(email, password) {
   const user = await User.findOne({ email });
   if (!user) {
-    throw new Error('Invalid credentials');
+    throw new Error('Invalid credentials, Test Github Workflow');
   }
 
   const match = await bcrypt.compare(password, user.passwordHash);
   if (!match) {
-    throw new Error('Invalid credentials');
+    throw new Error('Invalid credentials, Test Github Workflow');
   }
 
   const token = jwt.sign({ sub: user.id }, 'test-secret', { expiresIn: '1h' });
