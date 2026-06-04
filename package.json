@@ -1,0 +1,27 @@
+{
+  "name": "assignment_guardian_store",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "jest": "^30.4.2"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.5.2",
+    "jest-mock": "^30.4.1",
+    "jsonwebtoken": "^9.0.3",
+    "supertest": "^7.2.2"
+  }
+}
